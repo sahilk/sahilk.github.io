@@ -101,6 +101,8 @@ header {
   position:fixed;
 }
 
+header img { width: 60px; height: 60px; border-radius: 4px;}
+
 header ul {
   list-style:none;
   height:40px;
