@@ -1,0 +1,57 @@
+html { min-height: 100%; min-width: 100%; position: relative; }
+body { color: #666; font-family: "Work Sans", sans-serif; font-size: 18px; height: 100%; line-height: 24px; overflow-x: hidden; padding-top: 48px;}
+h2, h3, h4 { font-weight: 700; }
+
+.transition-one { background: #efefef; height: 100%; left: 0; position: absolute; overflow: hidden; top: 0; transform: translateX(-100%); width: 100%; z-index: 100; }
+.transition-two { background: #bcbcbc; height: 100%; left: 0; position: absolute; overflow: hidden; top: 0; transform: translateX(-100%); width: 100%; z-index: 100; }
+
+.content { max-width: 992px; }
+	.home, .single { background: repeating-linear-gradient( 180deg, #efefef, #efefef 12px, #fff 12px, #fff 24px); }
+	.logo { height: 132px; margin: 24px 0 48px -65px; width: auto; }
+	.main-nav { font-weight: 700; list-style: none; margin: 6px 0 144px -40px; }
+		.main-nav a { color: #666; }
+			.main-nav a:hover { color: #666; text-decoration: none; }
+			.main-nav a.active { color: #939; }
+
+	.post a { color: #666; }
+		.post a:hover { color: #666; text-decoration: none; }
+	.post img { margin-bottom: 24px; max-width: 100%; }
+	.home h2 { font-size: 18px; line-height: 24px; margin: 6px 0 30px; }
+
+	.single .post img { margin-bottom: 30px; }
+	.single h2 { font-size: 36px; line-height: 48px; margin: 0 0 42px; }
+	.single p { margin-bottom: 24px; }
+
+	.single-tags { color: #39c; list-style: none; margin: 0 0 0 -40px; }
+		.single-tags:before { content: "_"; }
+
+.footer { background: #666; color: #39c; margin-top: 24px; padding: 48px 0; }
+	.footer ul { list-style: none; margin: 0 0 0 -40px; }
+
+/* animations */
+
+@keyframes fadeInUp {
+	0% { opacity: 0; transform: translate3d(0, 12px, 0); }
+	100% { opacity: 1; transform: none; }
+}
+
+@keyframes increaseWidth {
+	0% { transform: translateX(-100%); }
+	100% { transform: translate(0); }
+}
+
+@keyframes decreaseWidth {
+	0% { transform: translateX(0); }
+	100% { transform: translate(100%); }
+}
+
+.fadeIn { animation: fadeInUp ease-in 1; animation-fill-mode: forwards; animation-duration: 300ms; opacity: 0; }
+.fadeIn.one { animation-delay: 450ms; }
+.fadeIn.two { animation-delay: 600ms; }
+.fadeIn.three { animation-delay: 750ms; }
+.fadeIn.four { animation-delay: 900ms; }
+.fadeIn.five { animation-delay: 1050ms; }
+.fadeIn.six { animation-delay: 1200ms; }
+
+.transition-one { animation: increaseWidth 300ms ease-in forwards 1350ms, decreaseWidth 300ms ease-in forwards 2100ms; }
+.transition-two { animation: increaseWidth 300ms ease-in forwards 1500ms, decreaseWidth 300ms ease-in forwards 1950ms;; }
