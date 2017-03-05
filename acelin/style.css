@@ -47,13 +47,15 @@ h2, h3, h4 { font-weight: 700; }
 	100% { transform: translate(100%); }
 }
 
-.fadeIn { animation: fadeInUp ease-in 1; animation-fill-mode: forwards; animation-duration: 300ms; opacity: 0; }
-.fadeIn.one { animation-delay: 450ms; }
-.fadeIn.two { animation-delay: 600ms; }
-.fadeIn.three { animation-delay: 750ms; }
-.fadeIn.four { animation-delay: 900ms; }
-.fadeIn.five { animation-delay: 1050ms; }
-.fadeIn.six { animation-delay: 1200ms; }
+.main .fadeIn { animation: fadeInUp ease-in 1; animation-fill-mode: forwards; animation-duration: 300ms; opacity: 0; }
+.main .fadeIn.one { animation-delay: 450ms; }
+.main .fadeIn.two { animation-delay: 600ms; }
+.main .fadeIn.three { animation-delay: 750ms; }
+.main .fadeIn.four { animation-delay: 900ms; }
+.main .fadeIn.five { animation-delay: 1050ms; }
+.main .fadeIn.six { animation-delay: 1200ms; }
 
 .transition-one { animation: increaseWidth 300ms ease-in forwards 1350ms, decreaseWidth 300ms ease-in forwards 2100ms; }
 .transition-two { animation: increaseWidth 300ms ease-in forwards 1500ms, decreaseWidth 300ms ease-in forwards 1950ms; }
+
+.is-exiting { display: none; }

@@ -19,7 +19,7 @@
 	<div class="transition-one"></div>
 	<div class="transition-two"></div>
 	
-	<div class="container content single">
+	<div id="main" class="container content main single">
 		<div class="row">
 			<div class="col-md-4">
 				<a href="index.html"><img class="logo" src="img/logo.png"></a>
@@ -59,26 +59,45 @@
 	</div><!-- .footer -->
 
 	<!-- javascript -->
-	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script> -->
+	<script src="js/jquery.smoothState.min.js"></script>
 	<script type="text/javascript">
 		
 		// $(window).on("load", function() {
 		// 	$("body").removeClass("preload");
 		// });
 
-		$(function() {
-			//'use strict';
-			var $body    = $('html, body'),
-				content  = $('.container.content').smoothState({
-				onStart : {
-					duration: 250,
-					render: function () {
-						content.toggleAnimationClass('fadeIn');
+		$(function(){
+			'use strict';
+			var options = {
+				debug: true,
+				prefetch: true,
+				cacheLength: 2,
+				onStart: {
+					duration: 250, // Duration of our animation
+					render: function ($container) {
+						// Add your CSS animation reversing class
+						$container.addClass('is-exiting');
+
+						// Restart your animation
+						smoothState.restartCSSAnimations();
+					}
+				},
+				onReady: {
+					duration: 0,
+					render: function ($container, $newContent) {
+						// Remove your CSS animation reversing class
+						$container.removeClass('is-exiting');
+
+						// Inject the new content
+						$container.html($newContent);
+
 					}
 				}
-			}).data('smoothState');
+			},
+			smoothState = $('#main').smoothState(options).data('smoothState');
 		});
 
 	</script>
