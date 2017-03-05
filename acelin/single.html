@@ -18,8 +18,8 @@
 
 	<div id="main" class="main">
 
-	<div class="transition-one"></div>
-	<div class="transition-two"></div>
+	<!-- <div class="transition-one"></div>
+	<div class="transition-two"></div> -->
 	
 	<div class="container content single">
 		<div class="row">
@@ -83,7 +83,7 @@
 					duration: 250, // Duration of our animation
 					render: function ($container) {
 						// Add your CSS animation reversing class
-						$container.addClass('is-exiting');
+						$container.addClass('transition-one');
 
 						// Restart your animation
 						smoothState.restartCSSAnimations();
@@ -93,7 +93,7 @@
 					duration: 0,
 					render: function ($container, $newContent) {
 						// Remove your CSS animation reversing class
-						$container.removeClass('is-exiting');
+						$container.removeClass('transition-one');
 
 						// Inject the new content
 						$container.html($newContent);
