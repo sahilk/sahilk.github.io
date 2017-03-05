@@ -87,15 +87,15 @@
 						// Restart your animation
 						smoothState.restartCSSAnimations();
 					}
-				// },
-				// onReady: {
-				// 	duration: 0,
-				// 	render: function ($container, $newContent) {
-				// 		// Remove your CSS animation reversing class
-				// 		$container.removeClass('is-exiting');
-				// 		// Inject the new content
-				// 		$container.html($newContent);
-				// 	}
+				},
+				onReady: {
+					duration: 0,
+					render: function ($container, $newContent) {
+						// Remove your CSS animation reversing class
+						$container.removeClass('is-exiting');
+						// Inject the new content
+						$container.html($newContent);
+					}
 				}
 			},
 			smoothState = $('#main').smoothState(options).data('smoothState');
