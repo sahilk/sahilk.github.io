@@ -30,7 +30,7 @@ h2, h3, h4 { font-weight: 700; }
 
 /* animations */
 
-.preload * { animation: none !important; }
+/*.preload * { animation: none !important; }*/
 
 @keyframes fadeInUp {
 	0% { opacity: 0; transform: translate3d(0, 12px, 0); }
