@@ -55,7 +55,7 @@ h2, h3, h4 { font-weight: 700; }
 .main .fadeIn.five { animation-delay: 1050ms; }
 .main .fadeIn.six { animation-delay: 1200ms; }
 
-.transition-one { animation: increaseWidth 300ms ease-in forwards 1350ms /*, decreaseWidth 300ms ease-in forwards 2100ms*/ ; }
-.transition-two { animation: increaseWidth 300ms ease-in forwards 1500ms /*, decreaseWidth 300ms ease-in forwards 1950ms*/ ; }
+.transition-one { animation: increaseWidth 300ms ease-in forwards 1350ms, decreaseWidth 300ms ease-in forwards 2100ms; }
+.transition-two { animation: increaseWidth 300ms ease-in forwards 1500ms, decreaseWidth 300ms ease-in forwards 1950ms; }
 
-.is-exiting { background: #000; }
+.is-exiting .transition-one, .is-exiting .transition-two { animation-direction: alternate-reverse; }
