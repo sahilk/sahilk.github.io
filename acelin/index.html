@@ -83,9 +83,9 @@
 	<script src="js/jquery.smoothState.min.js"></script>
 	<script type="text/javascript">
 		
-		// $(window).on("load", function() {
-		// 	$("body").removeClass("preload");
-		// });
+		$(window).on("load", function() {
+			$("body").removeClass("preload");
+		});
 
 		$(function(){
 			'use strict';
@@ -97,7 +97,7 @@
 					duration: 250, // Duration of our animation
 					render: function ($container) {
 						// Add your CSS animation reversing class
-						$container.addClass('transition-one');
+						$container.addClass('is-exiting');
 
 						// Restart your animation
 						smoothState.restartCSSAnimations();
@@ -107,7 +107,7 @@
 					duration: 0,
 					render: function ($container, $newContent) {
 						// Remove your CSS animation reversing class
-						$container.removeClass('transition-one');
+						$container.removeClass('is-exiting');
 
 						// Inject the new content
 						$container.html($newContent);
