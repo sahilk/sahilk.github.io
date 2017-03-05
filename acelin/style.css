@@ -30,7 +30,7 @@ h2, h3, h4 { font-weight: 700; }
 
 /* animations */
 
-.preload * { animation: none !important; }
+/*.preload * { animation: none !important; }*/
 
 @keyframes fadeInUp {
 	0% { opacity: 0; transform: translate3d(0, 12px, 0); }
@@ -56,4 +56,4 @@ h2, h3, h4 { font-weight: 700; }
 .fadeIn.six { animation-delay: 1200ms; }
 
 .transition-one { animation: increaseWidth 300ms ease-in forwards 1350ms, decreaseWidth 300ms ease-in forwards 2100ms; }
-.transition-two { animation: increaseWidth 300ms ease-in forwards 1500ms, decreaseWidth 300ms ease-in forwards 1950ms;; }
+.transition-two { animation: increaseWidth 300ms ease-in forwards 1500ms, decreaseWidth 300ms ease-in forwards 1950ms; }
