@@ -55,5 +55,5 @@ h2, h3, h4 { font-weight: 700; }
 .main .fadeIn.five { animation-delay: 1050ms; }
 .main .fadeIn.six { animation-delay: 1200ms; }
 
-.transition-one { animation: increaseWidth 300ms ease-in forwards 1350ms /*, decreaseWidth 300ms ease-in forwards 2100ms*/ ; }
+.transition-one { animation: increaseWidth 300ms ease-in forwards 1350ms, decreaseWidth 300ms ease-in forwards 2100ms; }
 .transition-two { animation: increaseWidth 300ms ease-in forwards 1500ms /*, decreaseWidth 300ms ease-in forwards 1950ms*/ ; }
