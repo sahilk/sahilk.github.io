@@ -59,4 +59,4 @@ h2, h3, h4 { font-weight: 700; }
 .transition-two { animation: increaseWidth 300ms ease-in forwards 1500ms, decreaseWidth 300ms ease-in forwards 1950ms; }
 
 .main.is-exiting { background: #000; }
-.main.is-exiting .transition-one, .main.is-exiting .transition-two { animation-direction: alternate-reverse; }
+.main.is-exiting .transition-one, .main.is-exiting .transition-two { animation-fill-mode: backwards; }
