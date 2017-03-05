@@ -19,7 +19,7 @@ h2, h3, h4 { font-weight: 700; }
 	.home h2 { font-size: 18px; line-height: 24px; margin: 6px 0 30px; }
 
 	.single .post img { margin-bottom: 30px; }
-	.single h1 { font-size: 36px; line-height: 48px; margin: 0 0 42px; }
+	.single h2 { font-size: 36px; line-height: 48px; margin: 0 0 42px; }
 	.single p { margin-bottom: 24px; }
 
 	.single-tags { color: #39c; list-style: none; margin: 0 0 0 -40px; }
@@ -58,4 +58,4 @@ h2, h3, h4 { font-weight: 700; }
 .transition-one { animation: increaseWidth 300ms ease-in forwards 1350ms, decreaseWidth 300ms ease-in forwards 2100ms; }
 .transition-two { animation: increaseWidth 300ms ease-in forwards 1500ms, decreaseWidth 300ms ease-in forwards 1950ms; }
 
-.is-exiting { display: none; }
+.is-exiting { background: #000; }
