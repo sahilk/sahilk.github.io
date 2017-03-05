@@ -68,18 +68,18 @@
 		// 	$("body").removeClass("preload");
 		// });
 
-		// $(function() {
-		// 	//'use strict';
-		// 	var $body    = $('html, body'),
-		// 		content  = $('.container.content').smoothState({
-		// 		onStart : {
-		// 			duration: 250,
-		// 			render: function () {
-		// 				content.toggleAnimationClass('fadeIn');
-		// 			}
-		// 		}
-		// 	}).data('smoothState');
-		// });
+		$(function() {
+			//'use strict';
+			var $body    = $('html, body'),
+				content  = $('.container.content').smoothState({
+				onStart : {
+					duration: 250,
+					render: function () {
+						content.toggleAnimationClass('fadeIn');
+					}
+				}
+			}).data('smoothState');
+		});
 
 	</script>
 </body>
