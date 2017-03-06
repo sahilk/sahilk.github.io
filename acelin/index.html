@@ -97,7 +97,7 @@
 					duration: 900, // Duration of our animation
 					render: function ($container) {
 						// Add your CSS animation reversing class
-						$container.addClass('is-exiting');
+						$container.addClass('is-entering');
 						// Restart your animation
 						smoothState.restartCSSAnimations();
 					}
@@ -106,7 +106,7 @@
 					duration: 0,
 					render: function ($container, $newContent) {
 						// Remove your CSS animation reversing class
-						$container.removeClass('is-exiting');
+						$container.removeClass('is-entering');
 						// Inject the new content
 						$container.html($newContent);
 					}
