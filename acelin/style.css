@@ -16,14 +16,25 @@ h2, h3, h4 { font-weight: 700; }
 	.post a { color: #666; }
 		.post a:hover { color: #666; text-decoration: none; }
 	.post img { margin-bottom: 24px; max-width: 100%; }
-	.home h2 { font-size: 18px; line-height: 24px; margin: 6px 0 30px; }
+	.home h2 { font-size: 1em; line-height: 24px; margin: 6px 0 30px; }
 
 	.single .post img { margin-bottom: 30px; }
-	.single h2 { font-size: 36px; line-height: 48px; margin: 0 0 42px; }
+	.single h2 { font-size: 2em; line-height: 48px; margin: 0 0 42px; }
+	.single h3 { font-size: 1.6em; margin: 41px 0 24px; }
 	.single p { margin-bottom: 24px; }
 
 	.single-tags { color: #39c; list-style: none; margin: 0 0 0 -40px; }
 		.single-tags:before { content: "_"; }
+
+	.team img { border: 4px solid #ccc; border-radius: 50%; }
+	.team span { display: block; }
+		.team .name { font-weight: bold; }
+			.team .profile { color: #999; }
+	.team ul { margin: 0 0 48px -40px; }
+		.team li { display: inline-block; }
+			.fa-twitter { color: #1da1f2; }
+			.fa-facebook-official { color: #3b5998; }
+			.fa-linkedin { color: #0077b5; }
 
 .footer { background: #666; color: #39c; margin-top: 24px; padding: 48px 0; }
 	.footer ul { list-style: none; margin: 0 0 0 -40px; }
