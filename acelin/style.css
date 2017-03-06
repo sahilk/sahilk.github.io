@@ -53,7 +53,7 @@ h2, h3, h4 { font-weight: 700; }
 }
 
 @keyframes decreaseWidthReverse {
-	0% { transform: translateX(1000%); }
+	0% { transform: translateX(100%); }
 	100% { transform: translate(0); }
 }
 
