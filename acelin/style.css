@@ -58,4 +58,5 @@ h2, h3, h4 { font-weight: 700; }
 .transition-one { animation: increaseWidth 300ms ease-in forwards 1350ms, decreaseWidth 300ms ease-in forwards 2100ms; }
 .transition-two { animation: increaseWidth 300ms ease-in forwards 1500ms, decreaseWidth 300ms ease-in forwards 1950ms; }
 
-.is-exiting .fadeIn { animation-direction: alternate-reverse; -webkit-animation-direction: alternate-reverse; }
+.is-exiting .transition-one { animation: decreaseWidth 300ms ease-in forwards 0, increaseWidth 300ms ease-in forwards 600ms; }
+.is-exiting .transition-two { animation: decreaseWidth 300ms ease-in forwards 150ms, increaseWidth 300ms ease-in forwards 450ms; }
