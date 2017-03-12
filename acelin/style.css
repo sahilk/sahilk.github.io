@@ -14,10 +14,16 @@ h2, h3, h4 { font-weight: 700; }
 			.main-nav a:hover { color: #999; text-decoration: none; }
 			.main-nav a.active { color: #939; }
 
+	.testimonial { background: #39c; color: #fff; padding: 12px; margin-top: 12px; }
+		.testimonial span { display: block; }
+			span.source:before { content: "—"; display: block; }
+		.testimonial:before { border: 12px solid; border-color: #39c #39c transparent transparent; content: ' '; margin-top: 12px; position: absolute; height: 0; width: 0; left: -8px; top: 0; }
+
 	.post a { color: #666; }
 		.post a:hover { color: #666; text-decoration: none; }
 	.post img { border-radius: 2px; margin-bottom: 24px; max-width: 100%; }
 	.home h2 { font-size: 1em; line-height: 24px; margin: 6px 0 30px; }
+	.post ul, .post ol { margin-bottom: 24px; margin-left: -40px; list-style: circle; }
 	/*.home .post img { background: #efefef; min-height: 180px; min-width: 300px; }*/
 
 	.single .post img { margin-bottom: 30px; }
