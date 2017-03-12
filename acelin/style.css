@@ -29,8 +29,10 @@ h2, h3, h4 { font-weight: 700; }
 	.single .post img { margin-bottom: 30px; }
 	.single h2 { font-size: 2em; line-height: 48px; margin: 0 0 42px; }
 	.single h3 { font-size: 1.6em; margin: 41px 0 24px; }
+	.single h4 { font-size: 1.2em; margin: 47px 0 26px; }
 	.single p, .single address { margin-bottom: 24px; }
 		.single p:last-child { margin-bottom: 18px; }
+	.single i { color: #39c; margin-right: 12px; }
 
 	.single-tags { color: #39c; list-style: none; margin: 0 0 0 -40px; }
 		.single-tags:before { content: "_"; }
