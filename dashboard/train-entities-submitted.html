@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Entities – Quinto.ai Dashboard</title>
+
+	<!-- css -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Work+Sans:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12 header">
+				<img src="img/logo.svg">
+				<h1>Quinto.ai Dashboard</h1>
+				<ul class="main-nav">
+					<li><a href="#">Chats</a></li>
+					<li><a href="#" class="active">Train Quinto</a></li>
+					<li><a href="#">Reports</a></li>
+				</ul>
+				<ul class="meta-nav">
+					<li><a href="#">Logout</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3 left-sidebar">
+				<ul>
+					<li class="active clearfix">
+						<img src="img/nav-icon-entities.svg" class="float-left">
+						<span class="float-left">
+							<span class="nav-name">Entities</span>
+							<span class="nav-meta">1234 entities uploaded</span>
+						</span>
+					</li>
+					<li class="clearfix" onclick="location.href='train-intents-submitted.html'">
+						<img src="img/nav-icon-intents.svg" class="float-left">
+						<span class="float-left">
+							<span class="nav-name">Intents</span>
+							<span class="nav-meta">123 intents uploaded</span>
+						</span>
+					</li>
+					<li class="clearfix" onclick="location.href='train-api-submitted.html'">
+						<img src="img/nav-icon-api.svg" class="float-left">
+						<span class="float-left">
+							<span class="nav-name">API Endpoints</span>
+							<span class="nav-meta">Active</span>
+						</span>
+					</li>
+				</ul>
+			</div>
+			<div class="col-md-6 center">
+				<h2>Entities</h2>
+				<p>A detailed list of your products/services and their categorization helps us identify them and similar keywords in conversations.</p>
+				<h3>Uploaded File</h3>
+				<pre><code>asian,cuisine
+biryani,dish
+coconut,ingredient
+compote,dish
+corn,ingredient
+dessert,course
+dinner,course</code></pre>
+				<h3>Update File</h3>
+				<p>Save your spreadsheet as a .csv file and upload here:</p>
+				<form method="post" class="form-inline">
+					<div class="form-control-file">
+						<label class="custom-file">
+							<input type="file" class="custom-file-input" accept=".csv">
+							<span class="custom-file-control" data-file-name="Select file..."></span>
+						</label>
+					</div>
+					<button type="submit" class="btn btn-primary">Upload .CSV</button>
+				</form>
+				<a href="downloads/entities.csv" target="_blank" class="btn btn-secondary">Download sample file</a>
+			</div>
+		</div>
+	</div> <!-- .container-fluid -->
+
+	<!-- javascript -->
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script> -->
+	<script type="text/javascript">
+	
+		$('.custom-file-input').change(function() {
+			var filename = $(this).val();
+			var lastIndex = filename.lastIndexOf("\\");
+			if (lastIndex >= 0) {
+				filename = filename.substring(lastIndex + 1);
+			}
+			$('.custom-file-control').attr('data-file-name',filename);
+		});
+
+	</script>
+</body>
+</html>

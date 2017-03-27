@@ -1,0 +1,41 @@
+html, body { min-height: 100%; }
+
+body { color: #072F3E; font: 18px "Work Sans", sans-serif; line-height: 24px; }
+
+.header { background-color: #072F3E; color: #A0C8D7; font-size: 0.9em; padding: 8px 0; }
+.header img { height: 40px; margin: 0 16px; width: 40px; }
+.header h1 { display: inline-block; font-size: 0.9em; font-weight: bold; margin-bottom: 0; }
+.header ul { display: inline-block; margin-bottom: 0; }
+.header ul li { display: inline-block; list-style: none; margin-right: 16px; }
+.header ul li a { color: #6D95A4; }
+.header ul li a.active { color: #A0C8D7; }
+
+.left-sidebar { padding: 0; }
+.left-sidebar ul { margin: 0 0 0 -40px; }
+.left-sidebar li { border-bottom: 1px solid #EFEFEF; list-style: none; }
+.left-sidebar li img { margin: 16px 16px 15px; }
+.left-sidebar li span { display: block; }
+.left-sidebar li span.nav-name { margin: 14px 0 1px; }
+.left-sidebar li span.nav-meta { color: #6D95A4; font-size: 0.9em; }
+.left-sidebar li.active { border-right: 2px solid #072F3E; }
+.left-sidebar li:hover { background: #EFEFEF; cursor: pointer; }
+
+.center { border-left: 1px solid #EFEFEF; padding-bottom: 24px; padding-top: 12px; }
+.center h2 { font-size: 1.3em; font-weight: bold; line-height: 24px; margin-bottom: 26px; }
+.center h3 { color: #6D95A4; font-size: 1em; font-weight: bold; line-height: 24px; margin-bottom: 8px; }
+.center p { margin-bottom: 24px; }
+.center .alert { -webkit-border-radius: 2px; -moz-border-radius: 2px; -ms-border-radius: 2px; border-radius: 2px; margin: 0 0 22px; padding: 7px 16px 9px; }
+.center pre { background: #EFEFEF; border: 1px solid #D6D6D6; -webkit-border-radius: 2px; -moz-border-radius: 2px; -ms-border-radius: 2px; border-radius: 2px; margin: 26px 0 22px; padding: 6px 16px 8px; }
+.center code { font-family: "Inconsolata", monospace; }
+.center .form-inline { padding: 2px 0 16px; }
+.center .form-inline .custom-file { font-size: 0.9em; margin-right: 8px; }
+.center .form-inline .custom-file .custom-file-input { cursor: pointer; }
+.center .form-inline .custom-file .custom-file-control { -webkit-border-radius: 2px; -moz-border-radius: 2px; -ms-border-radius: 2px; border-radius: 2px; color: #072F3E; padding: 7px 8px; }
+.center .form-inline .custom-file .custom-file-control:before { -webkit-border-radius: 0 2px 2px 0; -moz-border-radius: 0 2px 2px 0; -ms-border-radius: 0 2px 2px 0; border-radius: 0 2px 2px 0; padding: 7px 8px; }
+.center .form-inline .custom-file .custom-file-control:after { content: attr(data-file-name); }
+.center .btn { -webkit-border-radius: 2px; -moz-border-radius: 2px; -ms-border-radius: 2px; border-radius: 2px; cursor: pointer; font-family: "Work Sans", sans-serif; line-height: 24px; padding: 7px 8px; }
+.center .btn:focus, .center .btn:active { box-shadow: none; outline: none; }
+.center .btn.btn-primary { background: #072F3E; }
+.center .btn.btn-primary:hover { background: #001827; }
+
+/*# sourceMappingURL=style.css.map */
