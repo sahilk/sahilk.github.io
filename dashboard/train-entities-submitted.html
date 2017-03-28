@@ -56,13 +56,8 @@
 				<h2>Entities</h2>
 				<p>A detailed list of your products/services and their categorization helps us identify them and similar keywords in conversations.</p>
 				<h3>Uploaded File</h3>
-				<pre><code>asian,cuisine
-biryani,dish
-coconut,ingredient
-compote,dish
-corn,ingredient
-dessert,course
-dinner,course</code></pre>
+				<pre><code class="uploaded collape"></code></pre>
+				<button class="btn" type="button" data-toggle="collapse" data-target=".uploaded" aria-expanded="false" aria-controls="uploaded">Button with data-target</button>
 				<h3>Update File</h3>
 				<p>Save your spreadsheet as a .csv file and upload here:</p>
 				<form method="post" class="form-inline">
@@ -81,9 +76,19 @@ dinner,course</code></pre>
 
 	<!-- javascript -->
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 	<script type="text/javascript">
+
+		$.ajax({
+			type: 'get',
+			url: 'downloads/entities.csv',
+			dataType: 'text',
+			success: function(data) 
+			{
+				$('.uploaded').append(data);
+			}
+		});
 	
 		$('.custom-file-input').change(function() {
 			var filename = $(this).val();
