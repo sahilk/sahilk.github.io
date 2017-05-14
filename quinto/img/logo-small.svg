@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>logo unit copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop---Home" transform="translate(-149.000000, -24.000000)">
+            <g id="header" transform="translate(149.000000, 24.000000)">
+                <g id="logo-unit-copy">
+                    <g id="logo">
+                        <rect id="Rectangle-2" fill="#072F3E" x="0" y="0" width="60" height="60" rx="4"></rect>
+                        <g id="Group" transform="translate(11.600000, 11.600000)">
+                            <circle id="Oval-1" fill="#FFFFFF" cx="18.4" cy="18.4" r="18.4"></circle>
+                            <path d="M18.4,4 C10.4470996,4 4,10.4470996 4,18.4 C4,26.3529004 26.3529004,4 18.4,4 Z" id="Oval-1" fill-opacity="0.05" fill="#072F3E"></path>
+                            <path d="M39.8596059,25.444237 L32.9901677,36.7575549 C32.0416347,38.3196995 30.5045011,38.320922 29.5552036,36.7575185 L22.6856769,25.4440547 C21.7371317,23.8818899 22.054413,22.6155167 23.3979659,22.615531 L39.1472948,22.6156982 C40.4892264,22.6157124 40.8088911,23.8808536 39.8596059,25.444237 Z" id="Rectangle-2" fill="#FFFFFF" transform="translate(31.272574, 30.272574) rotate(-45.000000) translate(-31.272574, -30.272574) "></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
