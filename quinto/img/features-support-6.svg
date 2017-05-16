@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44 (41411) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 23</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="36" height="36" rx="2"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop---Support" transform="translate(-820.000000, -912.000000)">
+            <g id="features" transform="translate(158.000000, 763.000000)">
+                <g id="Group-13-Copy-3" transform="translate(662.000000, 143.000000)">
+                    <g id="Group-23" transform="translate(0.000000, 6.000000)">
+                        <g id="Rectangle-9">
+                            <use fill-opacity="0.02" fill="#072F3E" fill-rule="evenodd" xlink:href="#path-1"></use>
+                            <rect stroke-opacity="0.1" stroke="#072F3E" stroke-width="1" x="0.5" y="0.5" width="35" height="35" rx="2"></rect>
+                        </g>
+                        <g id="cog-copy" transform="translate(8.000000, 8.000000)" fill-rule="nonzero" fill="#939898">
+                            <path d="M3.94,6.5 L2.22,3.64 L3.64,2.22 L6.5,3.94 C7.02,3.64 7.6,3.4 8.2,3.24 L9,0 L11,0 L11.8,3.24 C12.4,3.4 12.98,3.64 13.5,3.94 L16.36,2.22 L17.78,3.64 L16.06,6.5 C16.36,7.02 16.6,7.6 16.76,8.2 L20,9 L20,11 L16.76,11.8 C16.6,12.4 16.36,12.98 16.06,13.5 L17.78,16.36 L16.36,17.78 L13.5,16.06 C12.98,16.36 12.4,16.6 11.8,16.76 L11,20 L9,20 L8.2,16.76 C7.6,16.6 7.02,16.36 6.5,16.06 L3.64,17.78 L2.22,16.36 L3.94,13.5 C3.64,12.98 3.4,12.4 3.24,11.8 L0,11 L0,9 L3.24,8.2 C3.4,7.6 3.64,7.02 3.94,6.5 Z M10,13 C11.6568542,13 13,11.6568542 13,10 C13,8.34314575 11.6568542,7 10,7 C8.34314578,7.00000003 7.00000006,8.34314578 7.00000006,10 C7.00000006,11.6568542 8.34314578,13 10,13 L10,13 Z" id="Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
