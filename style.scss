@@ -62,6 +62,10 @@ a {
 
 // layout
 
+h1 span {
+	display: block;
+}
+
 .thumbnail {
 	margin-bottom: 24px;
 
@@ -86,14 +90,18 @@ a {
 	}
 }
 
-.post {
-	p {
+
+.single {
+	p:last-child {
 		margin-bottom: 24px;
 	}
-
-	img {
-		min-width: calc(100% + 30px);
-		margin: 0 0 24px -15px;
+	.post {
+		p {
+			margin-bottom: 24px;
+		}
+		img {
+			margin-bottom: 24px;
+		}
 	}
 }
 
@@ -129,6 +137,15 @@ a {
 		&:hover {
 			.thumbnail-cover {
 				opacity: 1;
+			}
+		}
+	}
+
+	.single {
+		.post {
+			img {
+				min-width: calc(100% + 30px);
+				margin: 0 0 24px -15px;
 			}
 		}
 	}
