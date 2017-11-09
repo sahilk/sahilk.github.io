@@ -41,7 +41,8 @@ p {
 	margin-bottom: 12px;
 }
 
-img {
+img, video {
+	display: block;
 	max-width: 100%;
 }
 
@@ -75,6 +76,7 @@ h1 span {
 	}
 
 	.thumbnail-cover {
+		background: rgba($black, 0.95);
 		color: $white;
 		display: block;
 		font-size: 18px;
@@ -84,6 +86,7 @@ h1 span {
 
 		h2 {
 			font-size: inherit;
+			font-weight: 300;
 			line-height: inherit;
 			margin: 0;
 		}
@@ -99,11 +102,36 @@ h1 span {
 		p {
 			margin-bottom: 24px;
 		}
-		img {
+		figure {
+			background: $black;
+			border: 4px solid $black;
 			margin-bottom: 24px;
+
+			img:nth-child(n+2){
+				margin-top: 5px;
+			}
+
+			figcaption {
+				color: $white;
+				font-size: 0.8em;
+				line-height: 24px;
+				padding: 8px 6px 6px;
+			}
 		}
 	}
 }
+
+@keyframes fadeInUp {
+	0% { opacity: 0; transform: translate3d(0, 12px, 0); }
+	100% { opacity: 1; transform: none; }
+}
+
+.content .fadeIn, .post .fadeIn { animation: fadeInUp ease-in 1; animation-fill-mode: forwards; animation-duration: 300ms; opacity: 0; }
+.content .fadeIn.one, .post .fadeIn { animation-delay: 450ms; }
+.content .fadeIn.two, .post .fadeIn { animation-delay: 600ms; }
+.content .fadeIn.three, .post .fadeIn { animation-delay: 750ms; }
+.content .fadeIn.four, .post .fadeIn { animation-delay: 900ms; }
+.content .fadeIn.five, .post .fadeIn { animation-delay: 1050ms; }
 
 @media (min-width: 992px) { 
 	.thumbnail {
@@ -117,33 +145,34 @@ h1 span {
 		}
 
 		.thumbnail-cover {
-			height: 100%;
+			bottom: 0;
+			height: 0;
 			font-size: 1.4em;
 			left: 0;
 			line-height: 36px;
-			opacity: 0;
-			padding: 24px;
 			position: absolute;
-			top: 0;
-			transition: opacity .25s ease;
+			transition: height .25s ease;
 			width: 100%;
 
 			h2 {
-				bottom: 24px;
-				position: absolute;
+				display: none;
 			}
 		}
 
 		&:hover {
 			.thumbnail-cover {
-				opacity: 1;
+				height: 100%;
+
+				h2 {
+					display: block;
+				}
 			}
 		}
 	}
 
 	.single {
 		.post {
-			img {
+			figure {
 				min-width: calc(100% + 30px);
 				margin: 0 0 24px -15px;
 			}
