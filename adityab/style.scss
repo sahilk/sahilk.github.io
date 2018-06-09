@@ -1,5 +1,5 @@
 @import url('normalize.css');
-@import url('https://use.typekit.net/xbc5bre.css');
+// @import url('https://use.typekit.net/xbc5bre.css');
 @import url('https://fonts.googleapis.com/css?family=Chivo:400,400i,700,700i');
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
@@ -131,11 +131,16 @@ html, body {
 		width: calc(100% - 48px);
 
 		input[type="email"] {
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
 			border: 1px solid $white;
 			@include border-radius(4px 0 0 4px);
 			color: $grey-primary;
+			height: 48px;
 			outline: none;
-			padding: 14px 8px;
+			padding: 15px 8px;
+			transition: border 0.15s;
 			width: 100%;
 
 			&:active, &:focus {
@@ -154,16 +159,19 @@ html, body {
 
 		.button {
 			background: lighten($grey-primary, 40%);
-			border: none;
+			border: 1px solid lighten($grey-primary, 40%);
 			@include border-radius(0 4px 4px 0);
 			color: $white;
+			height: 48px;
 			outline: none;
 			padding: 15px 0;
 			text-align: center;
+			transition: background 0.15s;
 			width: 48px;
 
 			&:hover, &:active, &:focus {
 				background: lighten($grey-primary, 25%);
+				border: 1px solid lighten($grey-primary, 25%);
 				cursor: pointer;
 			}
 		}
@@ -173,46 +181,103 @@ html, body {
 .copyright {
 	color: lighten($grey-primary, 15%);
 	display: block;
+
+	a {
+		color: lighten($grey-primary, 15%);
+		transition: color .15s;
+
+		&:hover, &:active, &:focus {
+			color: $red-primary;
+		}
+	}
 }
 
 .content {
 	background: $white;
+	padding: 24px;
 
-	.posts {
-		.post {
-			margin-bottom: 24px;
+	.section {
+		.section-title {
+			font-size: 1rem;
+			line-height: 1.5;
+			margin: 64px 0 24px;
 
-			h2 {
-				font-size: 1.4rem;
-				line-height: 1.333333333;
-				margin: 0;
+			a:after {
+				content: " →";
+				transition: padding-left .15s;
+			}
 
-				a {
-					color: $grey-primary;
-					text-decoration: none;
+			a:hover:after {
+				padding-left: 8px;
+			}
+		}
 
-					&:hover, &:focus, &:active {
-						color: $red-primary;
-					}
+		&:first-child {
+			.section-title {
+				margin: 0 0 24px;
+			}
+		}
+
+		a {
+			color: $grey-primary;
+			text-decoration: none;
+			transition: color 0.15s;
+
+			&:hover, &:focus, &:active {
+				color: $red-primary;
+			}
+		}
+
+		.posts {
+			.post {
+				margin-bottom: 24px;
+
+				h2 {
+					font-size: 1.4rem;
+					line-height: 1.333333333;
+					margin: 0;
+				}
+
+				.post-excerpt {
+					margin: 0;
+				}
+
+				&:last-child {
+					margin-bottom: 0;
 				}
 			}
+		}
 
-			.post-excerpt {
-				margin: 0;
-			}
+		&.lettering .posts, &.fonts .posts {
+			display: flex;
+			flex-direction: row;
+			overflow-x: scroll;
 
-			&:last-child {
-				margin-bottom: 0;
+			.post {
+				// float: left;
+				margin-left: 24px;
+				min-width: 75%;
+
+				&:first-child {
+					margin-left: 0;
+				}
 			}
 		}
 	}
 
 	&.vertical .posts {
-		padding: 24px;
-
 		.post {
 			img {
-				display: none;
+				// display: none;
+				border: 2px solid $grey-light;
+				@include border-radius(4px);
+				margin-bottom: 12px;
+				max-width: 100%;
+				transition: border .15s;
+
+				&:hover {
+					border: 2px solid $red-primary;
+				}
 			}
 		}
 	}
@@ -241,8 +306,6 @@ html, body {
 	}
 
 	&.single {
-		padding: 24px;
-
 		h2 {
 			font-size: 2.5rem;
 			line-height: 1;
@@ -257,6 +320,7 @@ html, body {
 			border-bottom: 1px solid lighten($grey-primary, 50%);
 			color: $red-primary;
 			text-decoration: none;
+			transition: border-bottom 0.15s;
 
 			&:hover, &:active, &:focus {
 				border-bottom: 1px solid $red-primary;
@@ -299,6 +363,7 @@ html, body {
 		float: left;
 		font-size: 0.8rem;
 		font-weight: bold;
+		text-transform: capitalize;
 	}
 
 	.post-date {
@@ -318,12 +383,16 @@ html, body {
 		}
 
 		input, textarea {
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
 			border: 1px solid lighten($grey-primary, 40%);
 			@include border-radius(4px);
 			color: $grey-primary;
 			margin-bottom: 1.333333333rem;
 			outline: none;
 			padding: 13px 8px;
+			transition: border .15s;
 			width: 100%;
 
 			&:active, &:focus {
@@ -336,13 +405,15 @@ html, body {
 		}
 
 		textarea {
-			min-height: 5.25rem;
+			min-height: 5.1rem;
 		}
 
 		input[type="submit"] {
 			background: lighten($grey-primary, 40%);
 			border: none;
 			color: $white;
+			padding: 14px 8px;
+			transition: background .15s;
 
 			&:hover, &:active, &:focus {
 				background: lighten($grey-primary, 25%);
@@ -371,17 +442,29 @@ html, body {
 	.content {
 		padding: 36px 12.5%;
 
-		.posts {
-			padding: 0 !important;
+		.section {
+			.posts {
+				.post {
+					float: left;
+					margin-left: 24px;
+					width: calc(50% - 12px);
 
-			.post {
-				min-width: 45%;
+					&:first-child {
+						margin-left: 0;
+					}
+				}
+			}
+
+			&.lettering .posts, &.fonts .posts {
+				display: block;
+				
+				.post {
+					min-width: 0;
+				}
 			}
 		}
 
 		&.single {
-			padding: 36px 12.5%;
-
 			img {
 				display: block;
 				margin: 0 0 12px -20%;
@@ -441,6 +524,7 @@ html, body {
 				color: $grey-primary;
 				text-decoration: none;
 				text-transform: uppercase;
+				transition: color 0.15s;
 
 				&:hover {
 					color: $red-primary;
@@ -472,11 +556,15 @@ html, body {
 		}
 
 		&.single {
-			padding: 36px 30% 36px 36px;
 			width: 75%;
 
 			img {
 				margin: 0 0 12px;
+				width: 125%;
+			}
+
+			img + em {
+				display: block;
 				width: 125%;
 			}
 
