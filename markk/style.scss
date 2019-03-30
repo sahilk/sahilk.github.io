@@ -410,10 +410,16 @@ body {
 		}
 
 		button {
+			background: none;
+			border: none;
+			cursor: pointer;
 			margin-right: 16px;
+			outline: none;
+			padding: 0 12px;
 
 			i {
 				color: $color-white;
+				line-height: 2;
 			}
 		}
 	}
