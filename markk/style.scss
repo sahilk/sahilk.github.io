@@ -313,7 +313,7 @@ body {
 
 	.post {
 		margin-top: 0;
-		
+
 		img {
 			margin-bottom: 24px;
 		}
@@ -377,7 +377,101 @@ body {
 	}
 }
 
-@media screen and (min-width: 576px) {}
-@media screen and (min-width: 768px) {}
-@media screen and (min-width: 992px) {}
-@media screen and (min-width: 1200px) {}
+@media (max-width: 575.98px) {
+	#header {
+		ul {
+			display: none;
+			
+			li {
+				margin: 0 24px 0 0;
+			}
+		}
+	}
+	#hero {
+		p {
+			font-size: 1.6em;
+			line-height: 1;
+			margin-bottom: 1.2rem;
+		}
+
+		.store-badges a:last-child img {
+			margin: 0px 8px 24px;
+		}
+
+		span {
+			font-size: 0.6em;
+		}
+
+		img {
+			max-width: 100%;
+			padding: 0 15px;
+		}
+	}
+
+	#explainers {
+		margin-top: 80px;
+
+		.col-md-4 {
+			padding: 0 calc(24px + 15px);
+		}
+
+		p {
+			margin-bottom: 80px;
+		}
+	}
+
+	#join-blog {
+		margin-bottom: 80px;
+		margin-top: 0;
+
+		.col-md-4 {
+			margin-bottom: 80px;
+		}
+
+		#home-join {
+			padding: 47px 23px;
+
+			h2 {
+				font-size: 1.6em;
+			}
+
+			a {
+				bottom: 0;
+				position: relative;
+			}
+		}
+
+		#home-blog {
+			border: none;
+			padding: 0 24px;
+
+			h2 {
+				font-size: 1.6em;
+			}
+		}
+	}
+
+	#footer {
+		.container {
+			padding: 0 calc(24px + 15px);
+		}
+
+		ul {
+			margin: 32px 0 0;
+
+			li {
+				margin: 0 24px 0 0;
+			}
+
+			&:last-child {
+				li {
+					margin: 0 16px 0 0;
+				}
+			}
+		}
+	}
+}
+@media (min-width: 576px) and (max-width: 767.98px) {}
+@media (min-width: 768px) and (max-width: 991.98px) {}
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+@media (min-width: 1200px) {}
