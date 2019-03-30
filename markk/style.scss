@@ -97,13 +97,19 @@ body {
 		}
 	}
 
-	.store-badges img {
-		@include border-radius(12px);
-		margin: 48px 8px 24px;
-		transition: box-shadow 0.125s ease-in-out;
+	.store-badges {
+		a {
+			display: inline-block;
+			margin: 48px 8px 24px;
+		}
 
-		&:hover {
-			box-shadow: 0 0 8px rgba($color-green, .25);
+		img {
+			@include border-radius(12px);
+			transition: box-shadow 0.125s ease-in-out;
+
+			&:hover {
+				box-shadow: 0 0 8px rgba($color-green, .25);
+			}
 		}
 	}
 
@@ -378,10 +384,14 @@ body {
 }
 
 @media (max-width: 575.98px) {
+	html, body {
+		overflow-x: hidden;
+	}
+
 	#header {
 		ul {
 			display: none;
-			
+
 			li {
 				margin: 0 24px 0 0;
 			}
@@ -394,16 +404,22 @@ body {
 			margin-bottom: 1.2rem;
 		}
 
-		.store-badges a:last-child img {
-			margin: 0px 8px 24px;
+		.store-badges {
+			a:last-child {
+				margin: 0px 8px 24px;
+			}
+
+			img {
+				height: 48px;
+			}
 		}
 
 		span {
 			font-size: 0.6em;
 		}
 
-		img {
-			max-width: 100%;
+		div + img {
+			max-width: 200%;
 			padding: 0 15px;
 		}
 	}
