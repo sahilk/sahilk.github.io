@@ -260,7 +260,7 @@ body {
 	color: $color-light-grey;
 
 	.container {
-		padding: 80px 15px 160px;
+		padding: 80px 15px;
 
 		p {
 			margin-bottom: 1.6rem;
@@ -270,12 +270,12 @@ body {
 			@include border-radius(12px);
 			display: block;
 			height: auto;
-			margin-bottom: 80px;
+			margin-bottom: 48px;
 			max-width: 100%;
 		}
 
 		figure {
-			margin-bottom: 80px;
+			margin-bottom: 48px;
 
 			img {
 				margin: 0 0 16px 0;
@@ -288,7 +288,7 @@ body {
 		}
 
 		* + img, * + figure {
-			margin-top: 80px;
+			margin-top: 48px;
 		}
 
 		.sidebar {
@@ -319,7 +319,7 @@ body {
 	}
 
 	.post {
-		margin-top: 0;
+		margin: 0 0 80px;
 
 		img {
 			margin-bottom: 24px;
@@ -490,6 +490,27 @@ body {
 
 			h2 {
 				font-size: 1.6em;
+			}
+		}
+	}
+
+	#page-hero {
+		height: 240px;
+
+		h1 {
+			bottom: 24px;
+			font-size: 1.6em;
+		}
+	}
+
+	#content {
+		.container {
+			padding: 48px 15px;
+
+			.sidebar {
+				ul {
+					margin: 0 0 48px 0;
+				}
 			}
 		}
 	}
