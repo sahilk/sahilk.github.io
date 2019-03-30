@@ -20,12 +20,17 @@
 					<a class="float-left" href="index.html"><img src="img/logo.svg"></a>
 				</div>
 				<div class="col-auto">
-					<ul class="float-md-right">
+					<ul class="float-md-right d-none d-md-block">
 						<li><a href="blog.html">Blog</a></li>
 						<li><a href="page.html">About</a></li>
 						<li><a href="https://angel.co/getmarkk">Careers</a></li>
 					</ul>
 				</div>
+
+				<button class="d-block d-md-none">
+					<i class="material-icons">menu</i>
+					<i class="material-icons display-none">close</i>
+				</button>
 			</div>
 		</div>
 	</div>
@@ -122,5 +127,14 @@
 	</div>
 
 	<!-- js -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+
+		$('#header button').click(function() {
+			$('#header button i').toggleClass('display-none');
+			$('#header ul').toggleClass('d-none d-md-block');
+		});
+
+	</script>
   </body>
 </html>
